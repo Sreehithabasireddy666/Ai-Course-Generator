@@ -1,40 +1,51 @@
->>>>>>> origin/main
-# Ai-Course-Generator
-=======
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# AI Course Generator
 
-## Getting Started
+## Project Overview
+A Next.js platform that generates personalized educational content across diverse categories using advanced AI technologies and dynamic multimedia integration.
 
-First, run the development server:
+---
 
-```bash
+## Features
+- **AI-Powered Course Generation**: Connected to the Google Gemini API to generate detailed, topic-relevant course content.
+- **Dynamic Video Integration**: Integrated YouTube API to embed relevant videos within courses.
+- **Customizable Learning Experience**: Users can adjust course difficulty, duration, chapters, multimedia, and metadata through an interactive dashboard.
+- **Secure Authentication**: Implemented Clerk authentication for user sign-up, login, and access management.
+- **Robust Data Handling**: Leveraged Drizzle ORM with PostgreSQL for secure, scalable storage of course data and user information.
+- **Next.js Frontend**: Responsive, dynamic, and user-friendly interface.
+
+---
+
+## Technologies Used
+- **Frontend**: Next.js, React, Tailwind CSS
+- **Backend**: Node.js, Drizzle ORM, PostgreSQL
+- **Authentication**: Clerk
+- **APIs**: Google Gemini API, YouTube API
+- **Deployment**: Vercel (recommended for Next.js)
+
+---
+## Installation & Setup
+
+### Step 1: Clone the repository
+
+git clone https://github.com/YourUsername/AI-Course-Generator.git
+### step2: Navigate to the project directory
+
+cd AI-Course-Generator
+### step3: Install dependencies
+
+npm install
+### step4:Set up environment variables
+
+Create a .env.local file in the root directory and add:
+
+NEXT_PUBLIC_GOOGLE_API_KEY=your_google_api_key,
+NEXT_PUBLIC_YOUTUBE_API_KEY=your_youtube_api_key,
+CLERK_FRONTEND_API=your_clerk_frontend_api,
+DATABASE_URL=your_postgres_connection_string
+
+### step5: Run the development server
+
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+### Step 6: Open the app in your browser
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
->>>>>>> 0567832 (Initial Commit)
+Go to http://localhost:3000
